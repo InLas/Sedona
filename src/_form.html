@@ -6,15 +6,16 @@
         <ul class="data__list">
           <li class="data__item  data__item--left">
             <label class="data__label" for="name">Имя*:</label>
-            <input class="data__input" name="name" type="text" placeholder="Петр">
+            <input class="data__input" id="name" name="name" type="text" placeholder="Петр">
           </li>
           <li class="data__item  data__item--left">
             <label class="data__label" for="last-name">Фамилия*:</label>
-            <input class="data__input" name="last-name" type="text" placeholder="Иванов">
+            <input class="data__input" id="last-name" name="last-name" type="text" placeholder="Иванов">
           </li>
           <li class="data__item  data__item--left">
             <label class="data__label" for="patronymic">Отчество:</label>
-            <input class="data__input" name="patronymic" id="patronymic" type="text" placeholder="Александрович">
+            <input class="data__input" id="patronymic" name="patronymic" id="patronymic" type="text"
+              placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
@@ -22,12 +23,15 @@
         <legend class="data__title  data__title--contact-info">Контактная информация:</legend>
         <ul class="data__list  data__list--contact-info">
           <li class="data__item  data__item--contact-info  data__item--tel">
-            <label class="data__label  data__label--contact-info" for=""><span class="data__span">Контактный</span> телефон*:</label>
-            <input class="data__input  data__input--contact-info" name="phone" type="tel" placeholder="Введите телефон">
+            <label class="data__label  data__label--contact-info" for="phone"><span class="data__span">Контактный</span>
+              телефон*:</label>
+            <input class="data__input  data__input--contact-info" id="phone" name="phone" type="tel"
+              placeholder="Введите телефон">
           </li>
           <li class="data__item  data__item--contact-info  data__item--mail">
-            <label class="data__label  data__label--contact-info" for="">Электронная почта*:</label>
-            <input class="data__input  data__input--contact-info" name="mail" type="text" placeholder="Введите e-mail">
+            <label class="data__label  data__label--contact-info" for="mail">Электронная почта*:</label>
+            <input class="data__input  data__input--contact-info" id="mail" name="mail" type="text"
+              placeholder="Введите e-mail">
           </li>
         </ul>
       </fieldset>
@@ -35,30 +39,36 @@
         <legend class="data__title  data__title--impress">Ваше общее впечатление:</legend>
         <ul class="data__list  data__list--impress">
           <li class="data__item  data__item--impress">
-            <input class="data__input data__input--radio  visually-hidden" type="radio" id="yes" name="impress" value="yes">
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="yes" name="impress"
+              value="yes">
             <label class="data__label  data__label--btn  data__label--radio" for="yes">Скорее положительное</label>
           </li>
           <li class="data__item  data__item--impress">
-            <input class="data__input data__input--radio  visually-hidden" type="radio" id="no" name="impress" value="no">
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="no" name="impress"
+              value="no">
             <label class="data__label  data__label--btn  data__label--radio" for="no">Скорее отрицательное</label>
           </li>
           <li class="data__item  data__item--impress">
-            <input class="data__input data__input--radio  visually-hidden" type="radio" id="dont-know" name="impress" value="dont-know">
-            <label class="data__label  data__label--btn  data__label--radio" for="dont-know">Затрудняюсь ответить</label>
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="dont-know" name="impress"
+              value="dont-know">
+            <label class="data__label  data__label--btn  data__label--radio" for="dont-know">Затрудняюсь
+              ответить</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="data  data--visit  form__visit">
         <legend class="data__title  data__title--visit">Посещенные
           <br>
-          достопримечательности:</legend>
+          достопримечательности:
+        </legend>
         <ul class="data__list  data__list--visit">
           <li class="data__item  data__item--visit">
             <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="bridge" name="bridge">
             <label class="data__label  data__label--btn  data__label--checkbox" for="bridge">Мост Дьявола</label>
           </li>
           <li class="data__item  data__item--visit">
-            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="mountain" name="mountain">
+            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="mountain"
+              name="mountain">
             <label class="data__label  data__label--btn  data__label--checkbox" for="mountain">Гора-Колокол</label>
           </li>
           <li class="data__item  data__item--visit">
@@ -73,7 +83,8 @@
       </fieldset>
       <fieldset class="data data--emotions form__emotions">
         <legend class="data__title  data__title--emotions">Опишите свои эмоции:</legend>
-        <textarea class="data__input  data__input--textarea" type="checkbox" id="emotions" name="emotions-text" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="data__input  data__input--textarea" id="emotions" name="emotions-text"
+          placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <div class="form__controls">
         <button class="form__btn" type="submit">Отправить отзыв</button>

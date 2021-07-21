@@ -1,0 +1,83 @@
+.intro {
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0 25px;
+
+  &--photo {
+    margin-bottom: 40px;
+  }
+
+  &--video {
+    margin-bottom: 40px;
+  }
+
+  &--review {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+
+    margin-bottom: 53px;
+    padding: 0;
+
+    &--photo {
+      width: 440px;
+
+      margin-bottom: 84px;
+    }
+
+    &--video {
+      width: 440px;
+
+      margin-bottom: 84px;
+    }
+
+    &--review {
+      width: 440px;
+
+      margin-bottom: 84px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--review {
+      margin-bottom: 63px;
+    }
+  }
+}
+
+.intro__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+
+    &--inner {
+      font-size: 30px;
+    }
+  }
+}
+
+.intro__text {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+
+  &--inner {
+    line-height: 24px;
+  }
+}

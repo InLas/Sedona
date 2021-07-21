@@ -1,0 +1,308 @@
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item {
+  text-transform: uppercase;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 400px / 1200px * 100%;
+
+    height: 256px;
+  }
+}
+
+.features__item--blue {
+  padding: 40px 10px;
+
+  color: #ffffff;
+  background-color: #81B3D2;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px;
+  }
+}
+
+.features__item--town {
+  position: relative;
+  
+  padding-top: 70px;
+
+  order: 1;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -1px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 37px;
+
+    background-image: url(../img/triangle-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.features__item--city {
+  height: 260px;
+
+  overflow: hidden;
+
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 800px / 1200px * 100%;
+  }
+}
+
+.features__picture {
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    object-fit: fill;
+  }
+}
+
+.features__item--options {
+  align-self: flex-start;
+
+  text-align: left;
+
+  position: relative;
+
+  width: auto;
+
+  padding: 13px 20px;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 9999;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+
+    text-align: center;
+
+    height: 330px;
+
+    padding: 160px 30px 40px;
+
+    &::before {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.features__item--housing {
+  padding-top: 35px;
+
+  order: 3;
+
+  &::before {
+    top: 24px;
+    left: 21px;
+
+    width: 39px;
+    height: 37px;
+
+    background-image: url(../img/svg/icon-house.svg);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 18%;
+
+      width: 75px;
+      height: 72px;
+  
+      background-image: url(../img/svg/icon-house-tablet.svg);
+    }
+  }
+}
+
+.features__item--suvenires {
+  order: 4;
+
+  &::before {
+    top: 1px;
+    left: 25px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url(../img/svg/icon-gift.svg);
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+
+    &::before {
+      top: 17%;
+
+      width: 64px;
+      height: 75px;
+  
+      background-image: url(../img/svg/icon-gift-tablet.svg);
+    }
+  }
+}
+
+.features__item--eat {
+  padding-bottom: 35px;
+
+  order: 5;
+
+  &::before {
+    top: 8px;
+    left: 18px;
+
+    width: 40px;
+    height: 35px;
+
+    background-image: url(../img/svg/icon-burger.svg);
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+
+    &::before {
+      top: 19%;
+
+      width: 76px;
+      height: 68px;
+  
+      background-image: url(../img/svg/icon-burger-tablet.svg);
+    }
+  }
+}
+
+.features__item--devils {
+  order: 6;
+
+  @media (min-width: $tablet-width) {
+    order: 7;
+  }
+}
+
+.features__item--bridge {
+  height: 260px;
+
+  overflow: hidden;
+
+  order: 7;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 800px / 1200px * 100%;
+    
+    order: 6;
+  }
+}
+
+.features__item--gray {
+  position: relative;
+
+  padding: 23px 35px;
+
+  background-color: #EEEEEE;
+
+  order: 8;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 280px;
+    height: 1px;
+
+    background-color: #D6D6D6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 50px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.features__item--inner {
+  &::after {
+    display: none;
+  }
+}
+
+.features__title {
+  font-size: 18px;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.features__number {
+  display: block;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 21px;
+
+  margin: 0;
+  padding: 0;
+}

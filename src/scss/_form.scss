@@ -1,0 +1,119 @@
+.form__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.form__review {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__initials {
+  order: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+
+    flex-basis: 50%;
+  }
+}
+
+.form__contact-info {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    flex-basis: 100%;
+  }
+}
+
+.form__impress {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    flex-basis: 50%;
+
+    order: 0;
+  }
+}
+
+.form__visit {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+
+    flex-basis: 100%;
+  }
+}
+
+.form__emotions {
+  order: 4;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+}
+
+.form__controls {
+  order: 5;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+  }
+}
+
+.form__btn {
+  font: inherit;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  padding: 15px 0;
+
+  color: #ffffff;
+  background-color: #81B3D2;
+  border: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #5496BD;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+}
+
+.form__note {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    
+    margin-left: auto;
+  }
+}

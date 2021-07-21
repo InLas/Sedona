@@ -1,0 +1,18 @@
+.video__wrapper {
+  width: 320px;
+
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.video__file {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,84 @@
+<section class="form">
+  <div class="form__wrapper">
+    <form class="form__review" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="data  data--initials  form__initials">
+        <legend class="data__title  data__title--initials">Представьтесь:</legend>
+        <ul class="data__list">
+          <li class="data__item  data__item--left">
+            <label class="data__label" for="name">Имя*:</label>
+            <input class="data__input" name="name" type="text" placeholder="Петр">
+          </li>
+          <li class="data__item  data__item--left">
+            <label class="data__label" for="last-name">Фамилия*:</label>
+            <input class="data__input" name="last-name" type="text" placeholder="Иванов">
+          </li>
+          <li class="data__item  data__item--left">
+            <label class="data__label" for="patronymic">Отчество:</label>
+            <input class="data__input" name="patronymic" id="patronymic" type="text" placeholder="Александрович">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="data  data--contact-info  form__contact-info">
+        <legend class="data__title  data__title--contact-info">Контактная информация:</legend>
+        <ul class="data__list  data__list--contact-info">
+          <li class="data__item  data__item--contact-info  data__item--tel">
+            <label class="data__label  data__label--contact-info" for=""><span class="data__span">Контактный</span> телефон*:</label>
+            <input class="data__input  data__input--contact-info" name="phone" type="tel" placeholder="Введите телефон">
+          </li>
+          <li class="data__item  data__item--contact-info  data__item--mail">
+            <label class="data__label  data__label--contact-info" for="">Электронная почта*:</label>
+            <input class="data__input  data__input--contact-info" name="mail" type="text" placeholder="Введите e-mail">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="data data--impress  form__impress">
+        <legend class="data__title  data__title--impress">Ваше общее впечатление:</legend>
+        <ul class="data__list  data__list--impress">
+          <li class="data__item  data__item--impress">
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="yes" name="impress" value="yes">
+            <label class="data__label  data__label--btn  data__label--radio" for="yes">Скорее положительное</label>
+          </li>
+          <li class="data__item  data__item--impress">
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="no" name="impress" value="no">
+            <label class="data__label  data__label--btn  data__label--radio" for="no">Скорее отрицательное</label>
+          </li>
+          <li class="data__item  data__item--impress">
+            <input class="data__input data__input--radio  visually-hidden" type="radio" id="dont-know" name="impress" value="dont-know">
+            <label class="data__label  data__label--btn  data__label--radio" for="dont-know">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="data  data--visit  form__visit">
+        <legend class="data__title  data__title--visit">Посещенные
+          <br>
+          достопримечательности:</legend>
+        <ul class="data__list  data__list--visit">
+          <li class="data__item  data__item--visit">
+            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="bridge" name="bridge">
+            <label class="data__label  data__label--btn  data__label--checkbox" for="bridge">Мост Дьявола</label>
+          </li>
+          <li class="data__item  data__item--visit">
+            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="mountain" name="mountain">
+            <label class="data__label  data__label--btn  data__label--checkbox" for="mountain">Гора-Колокол</label>
+          </li>
+          <li class="data__item  data__item--visit">
+            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="park" name="park">
+            <label class="data__label  data__label--btn  data__label--checkbox" for="park">Слайд-парк</label>
+          </li>
+          <li class="data__item  data__item--visit">
+            <input class="data__input data__input--checkbox  visually-hidden" type="checkbox" id="rocks" name="rocks">
+            <label class="data__label  data__label--btn  data__label--checkbox" for="rocks">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="data data--emotions form__emotions">
+        <legend class="data__title  data__title--emotions">Опишите свои эмоции:</legend>
+        <textarea class="data__input  data__input--textarea" type="checkbox" id="emotions" name="emotions-text" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <div class="form__controls">
+        <button class="form__btn" type="submit">Отправить отзыв</button>
+        <span class="form__note">* — обязательные поля</span>
+      </div>
+    </form>
+  </div>
+</section>

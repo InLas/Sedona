@@ -1,0 +1,27 @@
+.page {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT Sans", sans-serif;
+
+  height: 100%;
+
+  &--popup {
+    pointer-events: none;
+  }
+}
+
+.page-body {
+  min-height: 100%;
+
+  margin: 0;
+
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}

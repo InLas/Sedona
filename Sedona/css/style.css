@@ -791,8 +791,9 @@ input[type="radio"].visually-hidden {
 }
 
 .video__wrapper {
-  width: 320px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .video__file {
@@ -1637,7 +1638,7 @@ input[type="radio"].visually-hidden {
   }
 
   .video__wrapper {
-    width: 648px;
+    padding: 0 60px;
   }
 
   .form__wrapper {
@@ -1910,7 +1911,7 @@ input[type="radio"].visually-hidden {
   }
 
   .video__wrapper {
-    width: 800px;
+    padding: 0;
   }
 
   .form__wrapper {
